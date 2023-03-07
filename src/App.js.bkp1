@@ -1,0 +1,26 @@
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ReactDOM from "react-dom";
+import Card from "./screens/Card"
+import NavBar from "./common/NavBar";
+import Footer from "./common/Footer";
+import Hero from "./screens/Hero";
+
+import "./index.css";
+
+function App() {
+
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Card />}>
+                    <Route index element={<Hero />} />
+                    <Route path="blogs" element={<NavBar />} />
+                    <Route path="contact" element={<Footer />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
+}
+
+export default App;

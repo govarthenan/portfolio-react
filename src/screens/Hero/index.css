@@ -1,0 +1,10 @@
+.hero-image {
+    width: 50rem;
+    border-radius: 5%;
+    height: auto;
+    max-width: 100%;
+}
+
+.hero-color {
+    background-color: #2d142c;
+}
